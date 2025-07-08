@@ -5,10 +5,9 @@ Welcome to the HTML and CSS training repository! This repository is designed to 
 ## Table of Contents
 
 1.  [Introduction](#introduction)
-2.  [Getting Started](#getting-started)
-3.  [Exercises](#exercises)
+2.  [Exercises](#exercises)
+3.  [Timeline](#timeline)
 4.  [Resources](#resources)
-5.  [Contributing](#contributing)
 
 ## Introduction
 
@@ -37,6 +36,10 @@ The exercises are located in each branch have prefix `example/*` or `practice/*`
 - **Exercise 2: CSS Styling & Layout**
   - Apply CSS styles to the HTML elements to change their appearance.
   - Use CSS to create a simple page layout with a header, sidebar, and main content area.
+
+## Timeline
+
+- July 8 -> July 10 (3days)
 
 ## Resources
 
