@@ -48,3 +48,35 @@ Here are some useful resources for learning HTML and CSS:
 - [Training Plan](https://docs.google.com/document/d/1yn6m0kTYpayTPiZRiltiKUn9YjRjqoxLKAzceoRBpdE/edit?tab=t.0)
 - [CSS - web.dev](https://web.dev/learn/css/)
 - [HTML Design and Build a Website](/)
+
+# CSS Selectors Training Notes
+
+This is a quick guide to CSS selectors, based on [this article](https://web.dev/learn/css/selectors).
+
+## Basic Selectors
+
+- **Universal Selector (`*`)**: Selects all elements. Use sparingly!
+- **Type Selectors (e.g., `p`, `h1`, `div`)**: Selects all elements of a specific type.
+- **Class Selectors (e.g., `.my-class`)**: Selects all elements with a specific class. Super useful!
+- **ID Selectors (e.g., `#my-id`)**: Selects the element with a specific ID. IDs should be unique!
+- **Attribute Selectors (e.g., `[type="text"]`)**: Selects elements with a specific attribute or attribute value.
+
+## Combinators
+
+- **Descendant Combinator (e.g., `div p`)**: Selects all `<p>` elements that are descendants of `<div>` elements.
+- **Child Combinator (e.g., `div > p`)**: Selects all `<p>` elements that are direct children of `<div>` elements.
+- **Adjacent Sibling Combinator (e.g., `h1 + p`)**: Selects the first `<p>` element that immediately follows an `<h1>` element.
+- **General Sibling Combinator (e.g., `h1 ~ p`)**: Selects all `<p>` elements that follow an `<h1>` element (not necessarily immediately).
+
+## Pseudo-classes and Pseudo-elements
+
+- **Pseudo-classes (e.g., `:hover`, `:focus`, `:nth-child()`)**: Selects elements based on their state or position in the document tree.
+- **Pseudo-elements (e.g., `::before`, `::after`)**: Creates virtual elements within an element.
+
+## Specificity
+
+Remember that CSS rules have different levels of specificity. ID selectors are more specific than class selectors, which are more specific than type selectors. Inline styles are the _most_ specific. Use the dev tools to debug specificity issues!
+
+## Example
+
+Check out `index.html` and `style.css` for a practical demonstration of these selectors.

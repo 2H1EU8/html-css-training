@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Selectors Demo</h1>
+        <p>Exploring different CSS selectors.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Basic Selectors</h2>
+            
+            <p>This is a paragraph.</p>
+            
+            <p class="highlight">This paragraph has a class.</p>
+            
+            <div id="unique">This div has a unique ID.</div>
+
+            <label for="text-input">
+                <input title="text-input" id="text-input" type="text" value="Text input">
+            </label>
+            <input title="password" type="password" value="Password input">
+        </section>
+
+        <section>
+            <h2>Combinators</h2>
+
+            <div>
+                <p>This paragraph is inside a div.</p>
+            </div>
+            
+            <article>
+                <p>This paragraph is inside an article.</p>
+            </article>
+
+            <p>This paragraph is outside the div.</p>
+
+            <h1>Heading</h1>
+            <p>Paragraph after heading.</p>
+            <p>Another paragraph after heading.</p>
+        </section>
+
+        <section>
+            <h2>Pseudo-classes</h2>
+            <a href="#">Hover me</a>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSS Selectors Demo</p>
+    </footer>
+
+</body>
+</html>

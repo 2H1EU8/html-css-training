@@ -1,0 +1,42 @@
+/* Basic Selectors */
+p {
+    color: #333;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#unique {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* Combinators */
+div p {
+    font-style: italic;
+}
+
+article > p {
+    color: green;
+}
+
+h1 + p {
+    font-size: 1.2em;
+}
+
+h1 ~ p {
+    text-decoration: underline;
+}
+
+/* Pseudo-classes */
+a:hover {
+    color: red;
+}
+
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
