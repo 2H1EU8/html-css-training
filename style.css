@@ -1,0 +1,60 @@
+body {
+    font-size: 16px; /* Root font size for rem units */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Absolute Units */
+.pixel-example {
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+}
+
+.point-example {
+    font-size: 12pt;
+}
+
+/* Relative Units */
+.em-example {
+    font-size: 1.2em;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.em-example .nested {
+    font-size: 1em; /* Still relative to the PARENT .em-example */
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.rem-example {
+    font-size: 1rem;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.viewport-example {
+    width: 50vw;
+    height: 50px;
+    background-color: lightsalmon;
+}
+
+/* Percentage Unit */
+.parent {
+    width: 200px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+
+.child {
+    width: 50%; /* 50% of the parent's width */
+    height: 50px;
+    background-color: lightseagreen;
+}

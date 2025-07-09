@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CSS Sizing Units Demo</h1>
+
+        <section class="absolute-units">
+            <h2>Absolute Units</h2>
+            <div class="pixel-example">This is 100px wide.</div>
+            <div class="point-example">This text is 12pt.</div>
+        </section>
+
+        <section class="relative-units">
+            <h2>Relative Units</h2>
+            <div class="em-example">
+                This is 1em.
+                <div class="nested">This is nested, also 1em.</div>
+            </div>
+            <div class="rem-example">This is 1rem.</div>
+            <div class="viewport-example">This is 50vw wide.</div>
+        </section>
+
+        <section class="percentage-example">
+            <h2>Percentage Unit</h2>
+            <div class="parent">
+                Parent (200px wide)
+                <div class="child">Child (50% of parent)</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
