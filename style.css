@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.my-element {
+    display: flex;
+}
+
+.my-element[data-flex-wrap] {
+    flex-wrap: wrap;
+}
+
+.my-element[data-space] {
+    justify-content: space-between;
+}
+
+.my-element[data-align-center] {
+    align-items: center;
+}
+
+/* Presentation styles */
+.my-element>* {
+    max-width: 280px;
+}
+
+.box {
+    padding: 20px 30px;
+    border: 1px gray solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.flex-item {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
