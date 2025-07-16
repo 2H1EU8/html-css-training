@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url(../assets/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf);
+}
+
+body {
+  background-color: $background-color;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: pxToRem(24);
+  color: $text-color;
+  font-family: $primary-font;
+}
