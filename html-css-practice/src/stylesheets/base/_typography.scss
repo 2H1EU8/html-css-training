@@ -10,6 +10,35 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: pxToRem(24);
-  color: $text-color;
+  color: $main-dark;
   font-family: $primary-font;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  &-sm {
+    font-size: pxToRem(18);
+  }
+
+  &-medium {
+    font-size: pxToRem(20);
+    line-height: pxToRem(28);
+  }
+
+  &-large {
+    font-size: pxToRem(30);
+    font-weight: 500;
+  }
+
+  &-xlarge {
+    font-size: pxToRem(40);
+    font-weight: 500;
+  }
+
+  &-xxlarge {
+    font-size: pxToRem(60);
+    font-weight: 500;
+  }
 }
