@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+.sponsors-wrapper {
+  padding: pxToRem(70) 0;
+
+  .sponsors-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sponsors-item {
+    -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+}
+
