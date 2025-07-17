@@ -1,3 +1,26 @@
-<header>
-
+<header class="header-wrapper">
+  <nav class="default-container header-content">
+    <div class="header-content-leftside">
+      <img
+        src="./assets/images/main-logo.png"
+        alt="Posivitus Logo"
+        class="header-content-logo"
+      />
+    </div>
+    <div class="header-content-rightside">
+      <ul class="nav-wrapper">
+        <include
+          src="./src/components/nav-item.html"
+          locals='{
+            "list": "[`about us`, `services`, `use cases`, `pricing`, `blog`]"
+          }'
+        ></include>
+        <li class="nav-item nav-cta">
+          <a class="nav-link text-medium" href="#" target="_blank" rel="noopener noreferrer"
+            >Request a quote</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
