@@ -16,6 +16,22 @@
   }
 }
 
+.button-cta {
+  padding: 20px 32px;
+  background-color: $border-color;
+  color: $background-color;
+  border-radius: 12px;
+  border: 1px solid $border-color;
+  font-weight: 400;
+  font-size: pxToRem(20);
+  line-height: pxToRem(28);
+
+  &:hover {
+    background-color: $background-color;
+    color: $border-color;
+  }
+}
+
 // Section headline
 .section-headline {
   margin-bottom: pxToRem(80);
