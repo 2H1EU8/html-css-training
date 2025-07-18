@@ -1,0 +1,11 @@
+<each loop="item, index in {{ list }}">
+    <div class="work-card cta">
+      <div class="work-card-minimize">
+        <div class="work-card-des">
+          <p class="process-num text-xxlarge">0{{ index + 2 }}</p>
+          <p class="title text-large">{{ item.title }}</p>
+        </div>
+        <img src="./assets/icons/plus-circle.svg" alt="expand">
+      </div>
+    </div>
+</each>

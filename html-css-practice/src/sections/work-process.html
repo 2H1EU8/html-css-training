@@ -1,0 +1,50 @@
+<section class="default-container work-wrapper">
+  <include
+    src="./src/components/section-headline.html"
+    locals='{
+      "title": "Our Working Process",
+      "descriptions": "Step-by-Step Guide to Achieving Your Business Goals"
+    }'
+  ></include>
+  <div class="work-content">
+    <div class="work-card work-expanded-card cta">
+      <div class="work-card-upside">
+        <div class="work-card-des">
+          <p class="process-num text-xxlarge">01</p>
+          <p class="title text-large">Consultation</p>
+        </div>
+        <img src="./assets/icons/minus-circle.svg" alt="minimize" />
+      </div>
+      <div class="work-card-downside">
+        <p class="process-description">
+          During the initial consultation, we will discuss your business goals
+          and objectives, target audience, and current marketing efforts. This
+          will allow us to understand your needs and tailor our services to best
+          fit your requirements.
+        </p>
+      </div>
+    </div>
+    <include
+      src="./src/components/work-process-card.html"
+      locals='{
+        "list": [
+          {
+            "title":"Research and Strategy Development"
+          },
+          {
+            "title":"Implementation"
+          },
+          {
+            "title":"Monitoring and Optimization"
+          },
+          {
+            "title":"Reporting and Communication"
+          },
+          {
+            "title":"Continual Improvement"
+          }
+        ]
+      }'
+    ></include>
+  </div>
+</section>

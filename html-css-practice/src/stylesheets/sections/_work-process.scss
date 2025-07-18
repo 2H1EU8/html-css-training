@@ -1,0 +1,47 @@
+@use "../abstracts" as *;
+
+.work-wrapper {
+  padding: pxToRem(70) 0;
+
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    gap: pxToRem(35);
+
+    .work-card {
+      padding: pxToRem(41) pxToRem(60);
+      background-color: $main-gray;
+      border: $main-border;
+      box-shadow: $box-shadow;
+      border-radius: 2em;
+    }
+
+    .work-expanded-card {
+      background-color: $highlight;
+    }
+
+    .work-card-minimize {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .work-card-upside {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: pxToRem(30);
+    }
+    .work-card-des {
+      display: flex;
+      align-items: center;
+
+      .process-num {
+        margin-right: pxToRem(20);
+      }
+    }
+
+    .work-card-downside {
+      border-top: 1px solid $main-dark;
+      padding-top: pxToRem(30);
+    }
+  }
+}
