@@ -1,0 +1,26 @@
+<each loop="service, index in {{ services }}">
+  <div class="service-card-wrapper card-{{ service.theme }} cta">
+    <div class="service-card-content">
+      <div class="card-title-wrapper">
+        <span class="service-card-title text-large">{{ service.title }}
+        </span>
+        <span class="service-card-title sub-line text-large">{{ service.subtitle }}</span>
+      </div>
+      <div class="service-cta">
+        <if condition="service.theme === 'white'">
+          <img src="./assets/icons/learn-more-dark.svg" alt="learn more">
+        </if>
+        <elseif condition="service.theme === 'green'">
+          <img src="./assets/icons/learn-more-dark.svg" alt="learn more">
+        </elseif>
+        <else>
+          <img src="./assets/icons/learn-more.svg" alt="learn more">
+        </else>
+        <a class="text-medium service-more" href="javascript:void(0)">Learn more</a>
+      </div>
+    </div>
+    <figure>
+      <img src="./assets/images/services-{{ index + 1 }}.png" alt="{{ service.title + service.subtitle }}" />
+    </figure>
+  </div>
+</each>

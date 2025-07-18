@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+
+.services-wrapper {
+  padding-bottom: pxToRem(60);
+
+  .service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: pxToRem(40);
+    column-gap: pxToRem(40);
+  }
+
+  .service-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: pxToRem(50);
+    border: $main-border;
+    box-shadow: $box-shadow;
+    border-radius: 2.5em;
+  }
+
+  .card-black {
+    background-color: $main-dark;
+
+    & .service-more {
+      color: $background-color !important;
+    }
+  }
+
+  .card-green {
+    background-color: $highlight;
+
+    & .service-card-title {
+      background-color: $background-color !important;
+    }
+  }
+
+  .service-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-title-wrapper {
+      margin-bottom: pxToRem(92);
+
+      .service-card-title {
+        padding: 4px 8px;
+        background-color: $highlight;
+        display: block;
+        border-radius: pxToRem(6);
+      }
+
+      .sub-line {
+        width: min-content;
+      }
+    }
+
+    .service-cta {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0 pxToRem(15);
+
+      .service-more {
+        color: $main-dark;
+
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+  }
+}
