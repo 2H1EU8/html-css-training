@@ -5,6 +5,7 @@
   margin: 0 auto;
 }
 
+// CTA base animations
 .cta {
   outline: 0;
   cursor: pointer;
@@ -12,5 +13,27 @@
 
   &:hover {
     transform: scale3d(.98, .98, .01);
+  }
+}
+
+// Section headline
+.section-headline {
+  margin-bottom: pxToRem(80);
+  display: flex;
+  align-items: center;
+
+  .section-title {
+    padding: 6px 7px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: pxToRem(40);
+    background-color: $highlight;
+  }
+
+  .section-description {
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.5;
   }
 }
