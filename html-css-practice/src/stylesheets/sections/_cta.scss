@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+.cta-wrapper {
+  padding: pxToRem(60) 0;
+  .cta-content {
+    display: flex;
+    justify-content: space-between;
+    padding: pxToRem(60);
+    border-radius: 2rem;
+    background-color: $main-gray;
+    height: pxToRem(347);
+
+    &-leftside {
+      max-width: 40%;
+      max-height: 90%;
+
+      .cta-title, .cta-description {
+        margin-bottom: pxToRem(26);
+      }
+    }
+
+    &-rightside {
+      position: relative;
+      max-height: 90%;
+      width: 40%;
+
+      .cta-illustration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

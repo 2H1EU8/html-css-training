@@ -20,18 +20,7 @@
         margin: pxToRem(35) 0;
       }
 
-      .hero-cta {
-        padding: 20px 32px;
-        background-color: $border-color;
-        color: $background-color;
-        border-radius: 12px;
-        border: 1px solid $border-color;
 
-        &:hover {
-          background-color: $background-color;
-          color: $border-color;
-        }
-      }
     }
   }
 }
