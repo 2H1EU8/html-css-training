@@ -1,21 +1,14 @@
 <section class="default-container services-wrapper">
-  <div class="section-headline">
-    <h2 class="section-title text-xlarge capitalize">
-      services
-    </h2>
-    <p class="section-description text-sm">
-      At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services
-      include:
-    </p>
-  </div>
+  <include
+    src="./src/components/section-headline.html"
+    locals='{
+      "title":"services",
+      "descriptions":"At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
+    }'
+  ></include>
   <div class="service-content">
-    <!-- <include src="./src/components/service-card.html"></include>
-    <include src="./src/components/service-card.html"></include>
-    <include src="./src/components/service-card.html"></include>
-    <include src="./src/components/service-card.html"></include>
-    <include src="./src/components/service-card.html"></include>
-    <include src="./src/components/service-card.html"></include> -->
-    <include src="./src/components/service-card.html" locals='{
+    <include src="./src/components/service-card.html"
+    locals='{
           "services": [
           {
             "title": "Search engine ",

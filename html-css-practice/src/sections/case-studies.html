@@ -1,0 +1,28 @@
+<section class="default-container case-studies-wrapper">
+  <include
+    src="./src/components/section-headline.html"
+    locals='{
+        "title":"case studies",
+        "descriptions":"Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+      }'
+  >
+  </include>
+  <div class="case-studies-content">
+    <include
+      src="./src/components/case-studies-card.html"
+      locals='{
+        "list": [
+          {
+            "description": "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales."
+          },
+          {
+            "description": "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic."
+          },
+          {
+            "description": "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales."
+          }
+        ]
+      }'
+    ></include>
+  </div>
+</section>
