@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.case-studies-wrapper {
+  padding:pxToRem(160) 0 pxToRem(70);
+
+  .case-studies-content {
+    background-color: $main-dark;
+    border-radius: 2rem;
+    padding: pxToRem(70) pxToRem(60);
+    display: flex;
+    // padding-right: pxToRem(64);
+    justify-content: space-between;
+
+    .card-wrapper:nth-child(1) {
+      padding-right: pxToRem(64);
+    }
+
+    .card-wrapper:nth-child(2) {
+      padding: 0 pxToRem(64);
+      border-inline: 1px solid $background-color;
+    }
+
+    .card-wrapper:nth-child(3) {
+      padding-left: pxToRem(64);
+    }
+
+    .card-descriptions {
+      color: $background-color;
+    }
+
+    .case-studies-cta {
+      padding: 9px 0;
+      color: $highlight;
+      display: flex;
+      align-items: center;
+
+      & img {
+        margin-left: pxToRem(10);
+      }
+    }
+  }
+}
